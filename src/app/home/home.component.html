@@ -3,14 +3,50 @@
   style="background: url('hero-background.jpg') no-repeat center center; background-size: cover; height:63vh;"
 >
 <div class="hero-section2">
-  <div class="container">
+  <!-- <div class="hs">
+  <div class="nav-buttons">
+    <button (click)="scrollToSection('about')">About</button>
+    <button (click)="scrollToSection('feature_container')">Features</button>
+    <button (click)="scrollToSection('testimonials')">Testimonials</button>
+    <button (click)="scrollToSection('games')">Games</button>
+    <button (click)="scrollToSection('contact')">Contact</button>
+  </div>
+</div> -->
+  
+<div class="hero-slide">
+    <div class="slider-container">
+      <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 1">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 2">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 3">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 4">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 5">
+        <img src="https://picsum.photos/1550/300" alt="Game Image 6">
+      </div>
+    </div>
+  
+    <!-- Navigation Arrows -->
+    <button class="prev" (click)="prevSlide()">&#10094;</button>
+    <button class="next" (click)="nextSlide()">&#10095;</button>
+  
+    <!-- Dots Indicator -->
+    <!-- <div class="dots">
+      <span *ngFor="let slide of slides; let i = index" 
+            [class.active]="i === currentIndex" 
+            (click)="goToSlide(i)">
+      </span>
+    </div> -->
+  </div>
+
+
+    <div class="container">
     <p class="headline">
       Level Up Your Gaming Experience<br />
       With Trust and Transparency<br />
       <span>Through GAMEVERSE</span>
     </p>
   </div>
-    <p id="welcome">Welcome to Gameverse, where trust and transparency meet the exciting <br> world of online gaming. Our goal is to provide a secure, responsible, and <br>immersive gaming experience for all users</p>
+    <p id="welcome">Welcome to Gameverse, where trust and transparency meet the exciting <br> world of online gaming. Our goal is to provide a secure, responsible, and <br>immersive gaming experience to all the users</p>
 </div>
 <div>
   <div class="hero">
@@ -36,17 +72,30 @@
     </div>
   </div>
 </div>
-    <!-- <p>
-      Discover the diverse world of medicinal plants used in AYUSH with
-      our immersive Virtual Herbal Garden. Learn, interact, and experience
-      the ancient traditions of herbal medicine through 3D models,
-      detailed information, and intuitive features.
-    </p> -->
-    <!-- <h1 class="hero-title">  </h1>
-    <p class="hero-subtitle">Building Trust and Transparency in the online gaming world</p>
-    <div class="hero-buttons">
-      <button class="btn btn-primary px-4 py-2 me-3">Explore Games</button>
-      <button class="btn btn-outline-light px-4 py-2">Learn More</button>
-    </div> -->
-  <!-- </div> -->
-<!-- </div> -->
+
+
+<!-- Add IDs to respective sections below for scrolling to work -->
+<!-- <section id="about">
+  <h2>About Gameverse</h2>
+  <p>Welcome to Gameverse, where gaming meets trust and transparency...</p>
+</section>
+
+<section id="features">
+  <h2>Features</h2>
+  <p>Discover our amazing features that enhance your gaming experience...</p>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <p>See what our users have to say about their experience...</p>
+</section>
+
+<section id="games">
+  <h2>Games</h2>
+  <p>Explore our extensive collection of exciting games...</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Reach out to us for support and inquiries...</p>
+</section> -->

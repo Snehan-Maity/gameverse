@@ -105,25 +105,27 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-      <!-- Review Section
-    <div class="col-lg-6 review-section">
-      <h2>User Ratings</h2>
-      <div id="ratings-display">
-        <img src="rating.png" alt="">
-        <p>⭐ 4.5 / 5 (based on <span id="rating-count">50</span> reviews)</p>
+      <div class="container">
+        <div class="row">
+          <!-- Review Section -->
+          <div class="col-lg-6 review-section">
+            <h2>User Ratings</h2>
+            <p>⭐ {{ currentRating }} / 5 (based on {{ totalRatings }} reviews)</p>
+            <button class="rate-btn" (click)="openRatingForm()">Rate Us</button>
+          </div>
+        </div>
+      
+        <!-- Rating Form (Conditional Rendering using Angular) -->
+        <div *ngIf="showRatingForm" class="rating-form-popup">
+          <div class="rating-form">
+            <h3>Rate Our Platform</h3>
+            <input type="number" #ratingInput min="1" max="5" placeholder="Enter rating (1-5)">
+            <button (click)="submitRating(ratingInput.value)">Submit</button>
+            <button (click)="closeRatingForm()">Close</button>
+          </div>
+        </div>
       </div>
-      <button class="rate-btn" onclick="openRatingForm()">Rate Us</button>
-    </div>
-  </div>
-
-  <!-- Rating Form (Hidden Initially) ->
-  <div id="rating-form-popup">
-    <div class="rating-form">
-      <h3>Rate Our Platform</h3>
-      <input type="number" id="rating-input" min="1" max="5" placeholder="Enter rating (1-5)">
-      <button onclick="submitRating()">Submit</button>
-      <button onclick="closeRatingForm()">Close</button>
-    </div> -->
+      
     </div>
   </div>
 

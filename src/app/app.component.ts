@@ -5,7 +5,6 @@ import { RouterOutlet } from '@angular/router';
 import { FeaturesComponent } from "./features/features.component";
 import { HomeComponent } from "./home/home.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
-// import { GamesComponent } from "./games/games.component";
 import { GameComponent } from "./game/game.component";
 
 
