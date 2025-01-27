@@ -1,17 +1,17 @@
 <div 
   class="hero-section text-center" 
-  style="background: url('hero-background.jpg') no-repeat center center; background-size: cover; height:150vh;"
+  style="background: url('hero-background.jpg') no-repeat center center; background-size: cover; height: 53vh;"
 >
 
-<div class="hero-slide">
-    <div class="slider-container">
+ <div class="hero-slide"> 
+     <div class="slider-container">
       <div class="slides" [style.transform]="'translateX(' + (-currentIndex * 100) + '%)'">
-        <img src="security.jpg" alt="Game Image 1">
-        <img src="https://picsum.photos/1550/500" alt="Game Image 2">
-        <img src="https://picsum.photos/1550/600" alt="Game Image 3">
-        <img src="https://picsum.photos/1550/1000" alt="Game Image 4">
-        <img src="https://picsum.photos/1550/1000" alt="Game Image 5">
-        <img src="https://picsum.photos/1550/1000" alt="Game Image 6">
+        <img src="hero-background222.png" alt="Game Image 1">
+        <img src="Home.png" alt="Game Image 2">
+        <!-- <img src="https://picsum.photos/1550/600" alt="Game Image 3"> -->
+        <!-- <img src="https://picsum.photos/1550/1000" alt="Game Image 4"> -->
+        <!-- <img src="https://picsum.photos/1550/1000" alt="Game Image 5"> -->
+        <!-- <img src="https://picsum.photos/1550/1000" alt="Game Image 6"> -->
       </div>
     </div>
   
@@ -26,7 +26,7 @@
             (click)="goToSlide(i)">
       </span>
     </div> -->
-  </div>
+  <!-- </div> -->
   
 
 
@@ -47,8 +47,28 @@
       With Trust and Transparency<br />
       <span>Through GAMEVERSE</span>
     </p>
+    <!-- <section class="selector"> -->
+    <!-- <div class="card" *ngFor="let game of displayedGames; let i = index" [ngClass]="getCardClass(i)"> -->
+      <!-- <img [src]="game.image" alt="{{ game.name }}"> -->
+      <!-- <h3>{{ game.name }}</h3> -->
+      <!-- <p>{{ game.details }}</p> -->
+      <!-- <button class="download-btn" (click)="goToGamePage(game.link)">Play Now</button> -->
+      <!-- <div class="card2">
+        <img src="lol.jpg" alt="Game1" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">LEAGUE OF LEGENDS</h5>
+          <p class="card-text">Details</p>
+          <p class="card-text">A multiplayer battle arena game where players control champions to compete in strategic 5v5 matches</p>
+          <p id="para">Size : 9 GB</p>
+          <a href="game-page.html" class="download-btn">Download Now</a>
+        </div>
+      </div> -->
+    <!-- </div> -->
+  <!-- </section>selector -->
   </div>
     <p id="welcome">Welcome to Gameverse, where trust and transparency meet the exciting <br> world of online gaming. Our goal is to provide a secure, responsible, and <br>immersive gaming experience to all the users</p>
+    <div class="game-cards-slider">
+    </div>
 </div>
 <div>
   <div class="hero">
@@ -58,9 +78,14 @@
             <div class="filters">
               <select class="filter-option">
                 <option value="">All Categories</option>
-                <option value="category1">Category 1</option>
-                <option value="category2">Category 2</option>
-                <option value="category3">Category 3</option>
+                <option value="category1">Action</option>
+                <option value="category2">Adventure</option>
+                <option value="category3">Strategy</option>
+                <option value="category3">Simulation</option>
+                <option value="category3">Sports & Racing</option>
+                <option value="category3">Fighting</option>
+                <option value="category3">Horror</option>
+                <option value="category3">Puzzle</option>
               </select>
               <!-- <select class="filter-option">
                 <option value="">Price Range</option>
@@ -76,28 +101,3 @@
 </div>
 
 
-<!-- Add IDs to respective sections below for scrolling to work -->
-<!-- <section id="about">
-  <h2>About Gameverse</h2>
-  <p>Welcome to Gameverse, where gaming meets trust and transparency...</p>
-</section>
-
-<section id="features">
-  <h2>Features</h2>
-  <p>Discover our amazing features that enhance your gaming experience...</p>
-</section>
-
-<section id="testimonials">
-  <h2>Testimonials</h2>
-  <p>See what our users have to say about their experience...</p>
-</section>
-
-<section id="games">
-  <h2>Games</h2>
-  <p>Explore our extensive collection of exciting games...</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Reach out to us for support and inquiries...</p>
-</section> -->

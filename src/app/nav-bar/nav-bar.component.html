@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
+    <div class="container_nav">
       <!-- Brand Logo -->
       <a class="navbar-brand fw-bold" routerLink="/"><img src="logo_w_crop.png" alt=""></a>
   
@@ -19,6 +19,23 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+            
+          
+          
+          <!-- <div class="filters">
+            <select class="filter-option">
+             <option value="">All Categories</option>
+             <option value="category1">Action</option>
+             <option value="category2">Adventure</option>
+             <option value="category3">Strategy</option>
+             <option value="category3">Simulation</option>
+             <option value="category3">Sports & Racing</option>
+             <option value="category3">Fighting</option>
+             <option value="category3">Horror</option>
+             <option value="category3">Puzzle</option>
+           </select>
+         </div> -->
           <li class="nav-item">
             <a class="nav-link" routerLink="/" routerLinkActive="active">Home</a>
           </li>
@@ -34,46 +51,24 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/responsible-gaming" routerLinkActive="active">Contact Us</a>
           </li>
-          <li class="nav-item">
+          <div class="srch">
+          <input type="text" class="search-bar " placeholder="Search..." (keyup.enter)="performSearch()" > <!--[(ngModel)]="searchQuery"> -->
+            <!-- <div class="search-icon"><i class="fa-solid fa-magnifying-glass " (click)="performSearch()"></i></div> -->
+            <button class="search-btn"><i class="fa-solid fa-magnifying-glass " (click)="performSearch()"></i></button>
+          </div>
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="/education" routerLinkActive="active">Report Abuse</a>
-          </li>
+          </li> -->
+          <!-- <li> -->
+            <!-- <div class="search-container"> -->
+              
+            <!-- </div> -->
+          <!-- </li> -->
+              
+                
             <button class="custom-login-btn">Login/Register</button>         
         </ul>
-  
-        <!-- Right Section: Language Dropdown & Login Button -->
-        <!--<div class="d-flex align-items-center">
-          <div class="dropdown me-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="languageDropdown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Language
-              
-            </button>
-            <!-- <div class="dropdown-menu" aria-labelledby="languageDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Hindi</a>
-              <a class="dropdown-item" href="#">Marathi</a>
-            </div> -->
-            <!-- <div class="dropdown show">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
-            
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div> ->
-  
-            
-          </div>
-        </div>-->
-      </div>
     </div>
-  </nav>
+  </div>
+</nav>
   
