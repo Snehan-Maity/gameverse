@@ -1,154 +1,23 @@
 
-.feature_container{
-    font-family: poppins;
-    // background-image: url('/game_bg.jpeg');
-    background-color: #3A9188;
-    background-size: contain;
-    height: 750px;
-    margin: 5px 0px;
-    padding: 0px 40px;
-    
-}
-.features-section {
-    // background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: #000000;
-    padding: 25px 0px 0px 0px;
-    text-align: center;
-  
-    .section-title {
-      
-      font-size: 2.8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      // color: white;
-      margin-bottom: 10px;
-    }
-  
-    .section-subtitle {
-      font-size: 1.4rem;
-      font-weight: 300;
-      max-width: 600px;
-      margin: 0 auto 50px auto;
-      opacity: 0.9;
-    }
-  
-    .feature-card {
-      background: #B8E1DD;
-      border-radius: 10px;
-      color: black;
-      padding: 30px;
-      margin: 15px 10px;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  
-      // .icon img {
-      //   width: 80px;
-      //   height: auto;
-      //   margin-bottom: 15px;
-      // }
-  
-      h3 {
-        font-size: 1.8rem;
-        font-weight: 600;
-        margin-bottom: 10px;
-      }
-  
-      p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        opacity: 0.9;
-      }
-  
-      &:hover {
-        transform: translateY(-10px);
-        background: white;
-        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
-      }
-    }
-  }
-  
-
-
-
-
-
-// Subscription plans 
-
-.container_sub {
-  padding: 40px 0px;
-  // margin: 30px;
-  font-family: poppins;
-  background-color: #B8E1DD;
-  color: #062925;
-
-  h2{
-    margin : 0px 0px 0px 0px;
-    text-align: center;
-    font-size: 2.8rem;
-    // text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 20px;
-  }
-
-  p{
-    text-align: center;
-  }
-}
-.subscription-plans {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  padding: 50px 250px;
-  // background: #B8E1DD;
-}
-
-.plan {
-  background: #066156;
-  // color: #062925;
-  color: white;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.plan:hover {
-  transform: scale(1.05);
-}
-
-.plan h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.price {
-  font-size: 22px;
-  font-weight: bold;
-  // color: #062925;
-  color: white;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
-.subscribe-btn {
-  background: #4caf50;
+.contact-us {
+  padding: 50px 0;
+  background: #1B4242;
   color: #fff;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 16px;
+  text-align: center;
+
+  h1 {
+    padding-right: 95px;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ffcc00;
+  }
+
+  .container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 130px;
+  }
 }
 
-.subscribe-btn:hover {
-  background: #45a049;
-}

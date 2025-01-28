@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import Chart from 'chart.js/auto';
 
 @Component({
   selector: 'app-features',
@@ -8,31 +9,43 @@ import { CommonModule } from '@angular/common';
   templateUrl: './features.component.html',
   styleUrl: './features.component.scss'
 })
-export class FeaturesComponent {
-  totalRatings: number = 50;
-  currentRating: number = 4.5;
-  showRatingForm: boolean = false;
 
-  openRatingForm(): void {
-    this.showRatingForm = true;
+
+
+
+export class FeaturesComponent implements OnInit {
+  name = '';
+  email = '';
+  message = '';
+
+  ngOnInit() {
+    this.loadRatingsChart();
   }
 
-  closeRatingForm(): void {
-    this.showRatingForm = false;
+  loadRatingsChart() {
+    const ctx = document.getElementById('ratingsChart') as HTMLCanvasElement;
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['1 Star', '2 Stars', '3 Stars', '4 Stars', '5 Stars'],
+        datasets: [{
+          label: 'User Ratings',
+          data: [10, 20, 30, 50, 100], // Dummy data
+          backgroundColor: ['#ff4444', '#ffbb33', '#ffcc00', '#99cc00', '#33b5e5'],
+        }]
+      }
+    });
   }
 
-  submitRating(inputRating: string): void {
-    let newRating = parseFloat(inputRating);
-    
-    if (newRating >= 1 && newRating <= 5) {
-      this.totalRatings++;
-      this.currentRating = ((this.currentRating * (this.totalRatings - 1)) + newRating) / this.totalRatings;
-      this.currentRating = parseFloat(this.currentRating.toFixed(1));
+  submitForm() {
+    alert(`Thank you, ${this.name}! Your message has been sent.`);
+    this.name = '';
+    this.email = '';
+    this.message = '';
+  }
 
-      alert('Thank you for your rating!');
-      this.showRatingForm = false;
-    } else {
-      alert('Please enter a valid rating between 1 and 5.');
-    }
+  openRatingModal() {
+    alert('Rating functionality will be added soon!');
   }
 }
+

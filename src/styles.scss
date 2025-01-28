@@ -440,6 +440,79 @@ button.prev:hover, button.next:hover {
 }
 
 
+.feature_container{
+  font-family: poppins;
+  // background-image: url('/game_bg.jpeg');
+  background-color: #3A9188;
+  background-size: contain;
+  height: 750px;
+  margin: 5px 0px;
+  padding: 0px 40px;
+  
+}
+.features-section {
+  // background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #000000;
+  padding: 25px 0px 0px 0px;
+  text-align: center;
+
+  .section-title {
+    
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    // color: white;
+    margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300; 
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    opacity: 0.9;
+  }
+
+  .feature-card {
+    background: #B8E1DD;
+    border-radius: 10px;
+    color: black;
+    padding: 30px;
+    margin: 15px 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+
+    // .icon img {
+    //   width: 80px;
+    //   height: auto;
+    //   margin-bottom: 15px;
+    // }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    &:hover {
+      transform: translateY(-10px);
+      background: white;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+
+
+
+
   // Community Section 
   .community-section {
     margin: 5px 0px;
@@ -512,6 +585,98 @@ button.prev:hover, button.next:hover {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+
+
+
+  
+
+
+
+
+
+// Subscription plans 
+
+.container_sub {
+  padding: 40px 0px;
+  // margin: 30px;
+  font-family: poppins;
+  background-color: #B8E1DD;
+  color: #062925;
+
+  h2{
+    margin : 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 2.8rem;
+    // text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+.subscription-plans {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 50px 250px;
+  // background: #B8E1DD;
+}
+
+.plan {
+  background: #066156;
+  // color: #062925;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  // color: #062925;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+.subscribe-btn {
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.subscribe-btn:hover {
+  background: #45a049;
+}
+
+
+
 
 .contact-us {
   margin: 0px;
@@ -601,6 +766,103 @@ button.prev:hover, button.next:hover {
 
 
 
+
+//new
+.contact-us {
+  .get-in-touch, .write-to-us, .ratings-section {
+    background: #e3dddd;
+    // padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+
+    ul.social-icons {
+      margin: 0px;
+    }
+    .fa-facebook-f, .fa-instagram, .fa-twitter, .fa-youtube {
+      color: #f60;
+      margin : 5px;
+      height: 24px;
+      width: 24px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      // color: #ffcc00;
+      color: #044A42;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+
+
+    p, .form-group {
+      margin-bottom: 15px;
+    }
+
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      li a {
+        color: #ffcc00;
+        font-size: 24px;
+      }
+    }
+
+    .btn {
+      background-color: #ffcc00;
+      color: #1a1a1a;
+      font-weight: bold;
+      border: 2px solid #1a1a1a;
+    }
+  }
+
+ 
+.col-lg-4.get-in-touch {
+  padding: 30px 40px;
+}
+  .col-lg-4.write-to-us {
+    height: 362px;
+    width: 210px;
+    padding: 30px;
+  }
+
+  .ratings-section {
+    text-align: center;
+
+    canvas {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 20px;
+      height: 500px;
+    }
+  }
+}
+
+
+.col-lg-4.ratings-section {
+  height: 350px;
+  padding: 20px;
+}
+.fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+  color: #f60;
+  margin : 5px;
+  height: 24px;
+  width: 24px;
+}
+
+
+
+
 //Contact Us Section
 .contact-us{
   background-color: #044A42;
@@ -614,8 +876,8 @@ button.prev:hover, button.next:hover {
   text-align: center;
 }
 .contact-us .container {
-  max-width: 1200px;
-  // margin: auto;
+  // max-width: 1200px;
+  margin: auto;
   justify-content: center;
   // align-items: center;
 }
@@ -632,12 +894,17 @@ button.prev:hover, button.next:hover {
 // }
 .get-in-touch, .write-to-us {
   margin: 0 5px;
+  width: 450px;
   padding: 20px;
   background-color: #ffffff;
   color: #000000;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   // gap: 50px;
+}
+
+.col-lg-4.get-in-touch {
+  padding: 0px;
 }
 .get-in-touch h2, .write-to-us h2 {
   font-size: 24px;
@@ -659,13 +926,18 @@ button.prev:hover, button.next:hover {
   padding: 0;
   display: flex;
   gap: 15px;
+  margin: 0px;
 }
-.social-icons li a {
+
+cial-icons li a {
   color: #ff6600;
   font-size: 24px;
 }
 
-
+.get-in-touch {
+  margin: 0px;
+  
+}
 
 
 
