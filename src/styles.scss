@@ -856,6 +856,12 @@ ul li {
   .ratings-section {
     text-align: center;
 
+    #ratingsChart {
+      // width: 100%;
+      width: 400px;
+      // margin-bottom: 20px;
+    }
+
     canvas {
       // width: 100%;
       width: 400px;
